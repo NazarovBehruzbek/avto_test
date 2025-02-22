@@ -5,7 +5,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 function Brands() {
   const navigate = useNavigate()
   const [brands, setBrands] = useState([])
-  const imageUrl = 'https://realauto.limsa.uz/api/uploads/images'
   const getCategory = () => {
     axios({
       url: 'https://realauto.limsa.uz/api/brands',
